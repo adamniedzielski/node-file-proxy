@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+  h3 Exchange your email address for #{file.name}
+  form(action=url, method="post")
+      input(type="text", name="email")
+      input(type="submit", value="Send")
